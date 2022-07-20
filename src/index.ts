@@ -1,7 +1,13 @@
-import path from 'path'
-import fs from 'fs';
+import path from 'path';
+import { writeFileSync } from 'fs';
+import { configString } from './utils/index';
+import { tempPackageJSON } from './utils/temp';
 
 
-const a: number = 1;
+const FOLDER = process.cwd();// 当前目录
 
-console.log(a, 'a')
+// const a: number = 1;
+
+// console.log(a, 'a')
+
+writeFileSync(path.join(FOLDER, 'config.json'), tempPackageJSON); // 创建个文件
