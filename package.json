@@ -4,7 +4,8 @@
   "description": "a cli tool for myself",
   "main": "index.js",
   "bin": {
-    "cheng-cli": "./bin/cheng-cli.js"
+    "cheng-cli": "bin/cheng-cli.js",
+    "demo-cli": "bin/demo-cli.js"
   },
   "scripts": {
     "start": "tsc --watch",
@@ -27,5 +28,8 @@
     "ts-node": "^10.9.1",
     "tslib": "^2.4.0",
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "commander": "^9.4.0"
   }
 }
